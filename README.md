@@ -7,25 +7,20 @@
 测试环境：Claude Desktop 3.6556.2.0（MSIX 商店版，API 模式）/ Claude Code 2.1.308 / Windows 11。
 
 ## 使用
-
 ```powershell
 # 打补丁
 .\repatch-claude-code.bat
-
 # 同步最新ClawGod补丁
 .\repatch-claude-code.bat -UpdateEngine
-
 # 还原
 .\repatch-claude-code.bat -Rollback
-
 # 指定版本 / 不自动重启 Desktop
 .\repatch-claude-code.bat -Version 2.1.308 -SkipRestart
 ```
 
 ### 隐私守卫
 
-`claude-privacy-guard.ps1` — Claude Desktop Electron 隐私守卫，
-
+`claude-privacy-guard.ps1` 
 | 遥测屏蔽 || 队列清理 | 
 
 
