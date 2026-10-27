@@ -1,16 +1,17 @@
-# clawkit
+# ClawGod-desktop
 
 > Claude Desktop 补丁工具箱。
 
-** 自动拉取最新- [0Chencc/clawgod](https://github.com/0Chencc/clawgod)
+补丁引擎运行时自动从上游拉取：[0Chencc/clawgod](https://github.com/0Chencc/clawgod)（本仓库不含其代码）。
 
 测试环境：Claude Desktop 3.6556.2.0（MSIX 商店版，API 模式）/ Claude Code 2.1.308 / Windows 11。
 
 ## 使用
+
 ```powershell
 # 打补丁
 .\repatch-claude-code.bat
-# 同步最新ClawGod补丁
+# 同步最新 ClawGod 补丁
 .\repatch-claude-code.bat -UpdateEngine
 # 还原
 .\repatch-claude-code.bat -Rollback
@@ -18,13 +19,11 @@
 .\repatch-claude-code.bat -Version 2.1.308 -SkipRestart
 ```
 
-### 隐私守卫
+## 隐私守卫
 
-`claude-privacy-guard.ps1` 
-| 遥测屏蔽 || 队列清理 | 
+`claude-privacy-guard.ps1`：遥测屏蔽 / 队列清理 / claude.ai 断网开关 / 定时自动重扫（交互菜单，需管理员）。
 
-
-## 
+## 致谢
 
 - [0Chencc/clawgod](https://github.com/0Chencc/clawgod)（补丁引擎，GPL-3.0）
 - [javaht/claude-desktop-zh-cn](https://github.com/javaht/claude-desktop-zh-cn)（Desktop 汉化，与本工具链互补）
