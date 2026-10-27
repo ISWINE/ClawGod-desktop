@@ -13,6 +13,8 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+# 子进程(node)输出为 UTF-8: 让 PS 按 UTF-8 解码, 否则中文/emoji 乱码
+try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new() } catch {}
 try { [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12 } catch {}
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 # 环境变量可能缺失/被沙箱剥离: 用已知文件夹 API 兼底
