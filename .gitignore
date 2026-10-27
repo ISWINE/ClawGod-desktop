@@ -1,0 +1,7 @@
+*.exe
+*.zip
+*.log
+clawgod-scan/
+clawgod-engine/
+clawgod-work-*/
+node_modules/
