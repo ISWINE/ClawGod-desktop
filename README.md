@@ -22,16 +22,11 @@
 .\repatch-claude-code.bat -Version 2.1.308 -SkipRestart
 ```
 
- node → 定位 取最新 hash 目录 → 备份→ 提取 → 打补丁 → 重打包 → 测 → 停 Desktop  → 换入 → AppX 自动重启。原版备份 `claude.orig-<ver>.exe`，`-Rollback` 依赖它。
-
-### 隐私守卫（Desktop 应用层）
+### 隐私守卫
 
 `claude-privacy-guard.ps1` — Claude Desktop Electron 隐私守卫，
 
-| 功能 | 说明 |
-|------|------|
-| 遥测屏蔽 | hosts sinkhole（IPv4+IPv6）自动扩充名单 |
-| 队列清理 | 清空 sentry 队列与 Crashpad 报告 ||
+| 遥测屏蔽 || 队列清理 | 
 
 
 ## 
