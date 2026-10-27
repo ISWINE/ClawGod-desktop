@@ -4,7 +4,7 @@
 
 ** 自动拉取最新0Chencc/clawgod
 
-测试环境：Claude Desktop 3.6556.2.0（MSIX 商店版，第三方 API 模式）/ Claude Code 2.1.308 / Bun v1.4.4 运行时 / Windows 11。
+测试环境：Claude Desktop 3.6556.2.0（MSIX 商店版，API 模式）/ Claude Code 2.1.308 / Windows 11。
 
 ## 使用
 
