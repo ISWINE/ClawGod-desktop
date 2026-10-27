@@ -2,7 +2,7 @@
 
 > Claude Desktop 补丁工具箱。
 
-** 自动拉取最新0Chencc/clawgod
+** 自动拉取最新- [0Chencc/clawgod](https://github.com/0Chencc/clawgod)（0Chencc/clawgod）
 
 测试环境：Claude Desktop 3.6556.2.0（MSIX 商店版，API 模式）/ Claude Code 2.1.308 / Windows 11。
 
