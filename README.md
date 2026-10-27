@@ -1,10 +1,11 @@
 # clawkit
 
-Claude Desktop / Claude Code 本机补丁工具链。三件事：
+Claude Desktop / Claude Code 本机补丁工具链。四件事：
 
 1. **repack.js** — Bun standalone 可执行文件（`__BUN` 段）通用重打包器：提取 → 修改模块源码 → 塞回单文件 exe
 2. **repatch-claude-code.ps1/.bat** — 全自动流水线：Claude Desktop 更新捆绑的 Claude Code 后一键重打 ClawGod 补丁（自动发现 node/引擎/数据目录/最新版本，可在线同步上游补丁引擎）
 3. **docs/** — 逆向文档：`__BUN` 容器格式、Desktop 完整性校验链真相、ClawGod 调研
+4. **claude-privacy-guard.ps1** — Claude Desktop 应用层隐私守卫：hosts 屏蔽 Sentry/Statsig/Amplitude/Segment 遥测、清本地 Crashpad/sentry 队列、claude.ai 断网开关、定时自动重扫；不碰安装目录免疫更新，与 ClawGod 进程内补丁互补（一个管 DNS 层一个管 claude.exe 内部）
 
 实测环境：Claude Desktop 3.6556.2.0（MSIX 商店版，第三方 API 模式）/ Claude Code 2.1.308 / Bun v1.4.4 运行时 / Windows 11。
 
@@ -55,6 +56,7 @@ node repack.js <original.exe> <scan-dir> <output.exe>
 | `docs/bun-section-format.md` | `__BUN` 容器格式与重打包配方 |
 | `docs/desktop-integrity-chain.md` | Desktop 完整性校验链逆向 |
 | `docs/clawgod-research.md` | ClawGod×Desktop 可行性调研 |
+| `claude-privacy-guard.ps1` | Desktop 遥测/隐私守卫（hosts sinkhole + 断网开关 + 登录/6h 自动重扫，UTF-8 BOM，PS 5.1 兼容） |
 
 ## 依赖
 
